@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@font-face {
+    font-family: studio-lumio-font;
+    src: url(./fonts/3534416bbfdcc9be-s.p.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width:100vw;
+    height:100dvh; 
+    height:100vh;/*fallback for unsported browsers*/
+    background-color: #f4f0ea;
+    position: relative;
+    overflow: hidden;
+    font-size:16px;
+    font-family: 'Nunito Sans', sans-serif; /*fallback font*/
+    font-family: studio-lumio-font;
+}
+
+header {
+    width:100%;
+    height:10%;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translateY(-1000px);
+    border:2px solid #37251b;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .left-wrapper,
+header .right-wrapper {
+    width:15%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn-box,
+.login-btn-box {
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn-box .menu-btn,
+.login-btn-box .login-btn {
+    width:70%;
+    height:40px;
+    border:2px solid #6F4E37;
+    border-radius:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 15px;
+}
+
+.menu-btn-box span,
+.login-btn-box span {
+    color:#37251b;
+    font-size: .75rem;
+}
+
+.menu-btn  .menu-btn-container,
+.login-btn .login-btn-container {
+    width:40%;
+    height:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu-btn-container div,
+.login-btn-container div {
+    width:25px;
+    height:2.5px;
+    background-color: #37251b;
+}
+
+.menu-btn span,
+.login-btn span {
+    font-size: .75rem;
+}
+
+.shop,
+.login {
+    width:30%;
+    color:#37251b;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: .75rem;
+}
+
+.login {
+    justify-content: flex-start;
+}
+
+.right-wrapper .login-btn-container {
+    height:50%;
+}
+
+.login-btn-container i {
+    color:#37251b;
+}
+
+h1 {
+    font-size:20rem;
+    color:#6F4E37;
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+    font-weight:400;
+    z-index:50;
+    white-space: nowrap;
+}
+
+.rectangle {
+    width:190px;
+    height:215px;
+    position: absolute;
+}
+
+.rectangle img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.wing {
+    left:3%;
+    bottom:-80%;
+    background-color: #6F4E37;
+}
+
+.lamp {
+    background-color: #37251b;
+    left:50%;
+    bottom:-80%;
+    transform: translate(-50%, -50%);
+}
+
+.lamp-stand {
+    background-color: #8f755f;
+    left:25%;
+    bottom:-80%;
+}
+
+.stand {
+    right:25%;
+    bottom:-80%;
+    background-color: #e4bc84;
+}
+
+.chair {
+    right:3%;
+    bottom:-80%;
+}
+
+.percentage-box {
+    position: absolute;
+    top:3%;
+    left:0;
+    height:50px;
+    width:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.percentage,
+.percentage-two {
+    color:#6F4E37;
+    font-style: italic;
+    font-size: 2rem;
+    position: relative;
+}
+
+.zero-zero {
+    display:flex;
+}
+
+.one, 
+.three-nine,
+.four-nine,
+.five-zero,
+.five-three,
+.hundreds {
+    position: absolute;
+    top:150%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-content {
+    position:absolute;
+    bottom:10%;
+    left:10.5%;
+    width:400px;
+    overflow: hidden;
+}
+
+.what-we-do-text {
+    width:75%;
+    color:#37251b;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+
+.explore-link {
+    border:2px solid #37251b;
+    width:55%;
+    height:40px;
+    border-radius:20px;
+}
+
+.explore-link a {
+    text-decoration: none;
+    display: block;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.explore-link .explore-text {
+    color:#37251b;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.explore-link div {
+    width:30px;
+    height:30px;
+    background-color: #37251b;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#f4f0ea;
+    font-size: .9rem;
+}
+
